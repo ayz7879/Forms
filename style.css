@@ -1,282 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-
 *{
     margin: 0;
     padding: 0;
 }
-
-/* Instagram div start */
-.instagram{
+.container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 765px;
     width: 1436px;
-    /* border: 2px solid black; */
+    /* background-color: green; */
+}
+
+.container .form_box{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 1050px;
+    border: 2px solid rgb(96, 96, 96);
+    /* background-color: red; */
+}
+
+/*-------------------------------------start left bar-------------------------------- */
+.container .form_box .leftbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+    color: white;
+    background-color: #00a577;
+}
+
+/* top content of left bar */
+.container .form_box .leftbar .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 136px;
+    width: 252px;
+    gap: 10px;
     /* background-color: black; */
-
+}
+.container .form_box .leftbar .top .top_content h3{
+    font-size: 25px;
 }
 /* end */
 
-/* -------------------------------Side bar start----------------------- */
-.side_bar{
+/* bottom content of left bar */
+.container .form_box .leftbar .bottom{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 769px;
-    width: 248px;
-    border-right: 2px solid rgb(96, 96, 96);
-    /* background: red; */
+    height: 336px;
+    width: 252px;
+    gap: 47px;
+    color: white;
+    /* background-color: black; */
 }
+.container .form_box .leftbar .bottom .bottom_content .icon{
+    border-radius: 100%;
+    border: 2px solid white;
+    padding: 12px;
+}
+/* end */
+/*-------------------------------------end left bar--------------------------------------- */
 
-/* side bar top start */
-.side_bar .top{
-    width: 248px;
-    height: 131px;
+
+/*-------------------------------------start right bar-------------------------------- */
+.form_box .right_bar{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: yellow; */
-
+    height: 500px;
+    width: 750px;
+    color: black;
+    background-color: white;
 }
-.side_bar .top h2{
-    font-family: 'Style Script';
+.form_box .right_bar .right_bar_content{
+    display: flex;
+    flex-direction: column;
+    height: 403px;
+    width: 666px;
+    /* color: white; */
+    /* background-color: green; */
+}
+.form_box .right_bar .right_bar_content .text{
+    height: 71px;
+    width: 666px;
+    /* background-color: yellow; */
+}
+.form_box .right_bar .right_bar_content div h2{
     font-size: 35px;
-    position: relative;
-    top: -5px;
-    left: -43px;
 }
-/* end */
-
-/* side bar middle start */
-.side_bar .middle{
-    width: 197px;
-    height: 510px;
+.form_box .right_bar .right_bar_content .forms{
     display: flex;
     flex-direction: column;
-    gap: 34px;
-    /* background: red; */
+    height: 331px;
+    width: 666px;
+    /* background-color: black; */
 }
-.side_bar .middle .middle_content{
-    display: flex;
-    gap: 13px;
-    font-size: 20px;
-}
-/* end */
-
-/* side bar bottom start */
-.side_bar .bottom{
-    width: 197px;
-    height: 100px;
+.form_box .right_bar .right_bar_content .forms form{
     display: flex;
     flex-direction: column;
-    gap: 34px;
-    /* background: green; */
+    height: 282px;
+    width: 666px;
 }
-.side_bar .bottom_content{
-    display: flex;
-    gap: 13px;
-    font-size: 20px;
-}
-/* end */
-/* -------------------------------Side bar End----------------------- */
-
-
-/* -------------------------------Middle bar start----------------------- */
-.middle_bar{
-    height: 769px;
-    width: 788px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: red; */
-}
-
-/* middle bar top start */
-.middle_bar .top{
-    height: 146px;
-    width: 788px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.middle_bar .top .stories_content{
-    height: 116px;
-    width: 643px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: yellow; */
-}
-.middle_bar .top .stories_content .stories_items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 83px;
-}
-.middle_bar .top .stories_content .stories_items li img{
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    border: 2px solid darkmagenta;
-    padding: 3px;
-}
-.middle_bar .top .stories_content .stories_items li{
-    list-style: none;
-}
-.middle_bar .top .stories_content .stories_items li h3{
-    font-size: 14px;
-}
-/* end */
-
-/* middle bar bottom start */
-.middle_bar .bottom{
-    height: 523px;
-    width: 496px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: blueviolet; */
-}
-.middle_bar .bottom .top{
-    height: 100px;
-    width: 496px;
+.form_box .right_bar .right_bar_content .forms form .first_div{
     display: flex;
     justify-content: space-between;
-    /* background-color: blue; */
+    height: 84px;
+    /* flex-direction: column; */
 }
-.middle_bar .bottom .top .left_content{
+.form_box .right_bar .right_bar_content .forms form .first_div div{
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: yellow; */
 }
-.middle_bar .bottom .top .left_content li img{
-    width: 50px;
+.forms form .first_div div input{
+    width: 314px;
+    height: 32px;
+}
+.forms form .second_div{
+    display: flex;
+    height: 84px;
+    flex-direction: column;
+    gap: 12px;
+}
+.forms form .second_div input{
+    width: 666px;
+    height: 32px;
+}
+.forms form .third_div{
+    display: flex;
+    height: 84px;
+    flex-direction: column;
+    gap: 12px;
+}
+.forms form .third_div textarea{
+    width: 666px;
+    height: 71px;
+}
+.forms .button button{
+    width: 154px;
     height: 50px;
-    border-radius: 100%;
-    border: 2px solid darkmagenta;
-    padding: 3px;
-}
-.middle_bar .bottom .top .left_content li{
-    list-style: none;
-}
-.middle_bar .bottom .top .left_content .text{
     position: relative;
-    top: -6px;
+    top: 24px;
+    background-color: #00a577;
+    color: white;
+    border: 2px solid rgb(96, 96, 96);
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bolder;
 }
-.middle_bar .bottom .top .right_content h2{
-    position: relative;
-    top: -8px;
-}
-.middle_bar .bottom .bottom1 img{
-    height: 555px;
-    width: 496px;
-    margin-top: 2px;
-}
-/* end */
-/* -------------------------------middle bar End----------------------- */
 
-/* -------------------------------right bar start----------------------- */
-.right_bar{
-    height: 769px;
-    width: 397px;
-    display: flex;
-    flex-direction: column;
-    /* background-color: yellow; */
-}
-/* top content */
-.right_bar .top{
-    width: 299px;
-    height: 121px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: red; */
-}
-.right_bar .top .top_content{
-    display: flex;
-    gap: 10px;
-}
-.right_bar .top .top_content img{
-    height: 47px;
-    width: 47px;
-    border-radius: 100%;
-}
-.right_bar .top .top_content h5{
-    color: #665df7;
-}
-/* end */
-
-/* middle content */
-.right_bar .middle{
-    height: 30px;
-    width: 299px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: grey;
-    position: relative;
-    top: -14px;
-}
-/* end */
-
-/* bottom content */
-.right_bar .bottom{
-    width: 299px;
-    height: 355px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    /* background-color: red; */
-}
-.right_bar .bottom .bottom_content{
-    display: flex;
-    gap: 10px;
-}
-.right_bar .bottom .bottom_content span{
-    font-size: 12px;
-}
-.right_bar .bottom .bottom_content div{
-    position: relative;
-    top: 8px;
-}
-.right_bar .bottom .bottom_content img{
-    height: 47px;
-    width: 47px;
-    border-radius: 100%;
-}
-.right_bar .bottom .bottom_content h5{
-    color: #665df7;
-    position: relative;
-    top: 20px;
-}
-.right_bar .bottom_row_content{
-    display: flex;
-    justify-content: space-between;
-    width: 299px;
-    height: 55px;
-    /* background-color: green; */
-}
-/* end */
-
-/* footer */
-.footer{
-    width: 299px;
-    height: 200px;
-    color: rgb(96, 96, 96);
-    /* background-color: green; */
-}
-.footer .text{
-    font-size: 14px;
-}
-.footer h3{
-    font-size: 12px;
-}
-/* end */
-
-/* -------------------------------right bar End----------------------- */
-
-
-
-
-
-
+/*--------------------------------end right bar--------------------------------------- */
